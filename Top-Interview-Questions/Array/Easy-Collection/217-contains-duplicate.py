@@ -11,4 +11,9 @@ class Solution:
     # Time Complexity: O(n)
     # Space Complexity: O(n), used a map, same memory as the array
 
-    # Sol 2.
+    # Sol 2. Use a set externally
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        s = set(nums)
+        return len(nums)!=len(s)
+    # Time Complexity: O(n)
+    # Space Complexity: O(n)
