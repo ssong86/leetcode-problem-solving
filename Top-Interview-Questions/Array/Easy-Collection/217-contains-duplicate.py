@@ -1,6 +1,6 @@
 from collections import defaultdict
 class Solution:
-    # Sol 1
+    # Sol 1. Using a defaultdict
     def containsDuplicate(self, nums: List[int]) -> bool:
         m = defaultdict(int)
         for num in nums:
@@ -10,3 +10,5 @@ class Solution:
         return False
     # Time Complexity: O(n)
     # Space Complexity: O(n), used a map, same memory as the array
+
+    # Sol 2.
