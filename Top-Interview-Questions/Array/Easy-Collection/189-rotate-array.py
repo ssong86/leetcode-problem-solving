@@ -1,4 +1,5 @@
 class Solution(object):
+    # Sol 1. Brute Force
     def rotate(self, nums, k):
         """
         :type nums: List[int]
@@ -10,7 +11,7 @@ class Solution(object):
             prev = nums[-1]
             for j in range(len(nums)):
                 nums[j], prev = prev, nums[j]
+    # Time Complexity: O(k x n) -> O(n)
+    # Space Complexity: O(1)
+    # Working, but not accepted, time limite exceeded issue
 
-# Brute Force
-# Time Complexity: O(k x n) -> O(b)
-# Space Complexity: O(1)
