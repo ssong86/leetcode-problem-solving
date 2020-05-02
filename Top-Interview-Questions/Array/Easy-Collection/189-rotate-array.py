@@ -24,7 +24,7 @@ class Solution(object):
         :type k: int
         :rtype: None Do not return anything, modify nums in-place instead.
         """
-        # Base Case
+        # Base Case updated
         if (len(nums)==1 or len(nums)==0):
             return False
 
