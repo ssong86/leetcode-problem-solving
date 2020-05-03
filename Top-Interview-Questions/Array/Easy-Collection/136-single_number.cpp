@@ -1,31 +1,21 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        /*
-         * Time Complexity: O(n)
-         * Space Complexity: O(n)
+
+        /* BIT MANIPULATION USING XOR
          * 
-         */
-        int n = nums.size();
+         * Time Complexity: O(n)
+         * Space Complexity: O(1)
+         * 
+        */
         
-        if(n == 1){
-            return nums[0];
+        int a = 0;
+        
+        for(int i = 0; i < nums.size(); i++){
+            a ^= nums[i];
         }
         
-        map<int, bool> a;
-        int sum = 0;
-        
-        for(int i = 0; i < n; i++){
-            if(a[nums[i]] == false){
-                sum += nums[i];
-                a[nums[i]] = true;
-            }else{
-                sum -= nums[i];
-            }
-        }
-        
-        return sum;
-        
+        return a;
     }
 };
 
@@ -38,7 +28,6 @@ public:
          * Space Complexity: O(1)
          * Time Limit Exceeded
          * Reason: Uses no memory but time complexity is too high
-         * 
          */
         
         int n = nums.size();
@@ -69,5 +58,36 @@ public:
         }
         
         return result;
+    }
+};
+
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        /*
+         * Time Complexity: O(n)
+         * Space Complexity: O(n)
+         */
+        int n = nums.size();
+        
+        if(n == 1){
+            return nums[0];
+        }
+        
+        map<int, bool> a;
+        int sum = 0;
+        
+        for(int i = 0; i < n; i++){
+            if(a[nums[i]] == false){
+                sum += nums[i];
+                a[nums[i]] = true;
+            }else{
+                sum -= nums[i];
+                // a[nums[i]] = false;
+            }
+        }
+        
+        return sum;
+        
     }
 };
