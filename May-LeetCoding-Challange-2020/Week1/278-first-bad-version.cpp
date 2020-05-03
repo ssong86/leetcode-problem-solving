@@ -6,12 +6,12 @@ public:
          * Time Complexity: O(logn)
          * Space Complexity: O(1)
          * Median Formula: start + (end-start)/2
-         *  
+         * 
          */
         int start = 0;
         int end = n;
         int pivot = n;
-        
+
         if(n == 1)
             return n;
         
