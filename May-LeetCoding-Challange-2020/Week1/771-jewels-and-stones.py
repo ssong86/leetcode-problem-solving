@@ -7,5 +7,5 @@ class Solution:
             if s in jewels:
                 how_many_jewels += 1
         return how_many_jewels
-    # Time Complexity: O(n)
+    # Time Complexity: O(n^2)
     # Space Complexity: O(n)

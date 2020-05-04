@@ -8,7 +8,7 @@ class Solution:
             else:
                 new_list.remove(i)
         return new_list.pop()
-    # Time Complexity: O(n^2) -> bad
+    # Time Complexity: O(n) 
     # Space complexity: O(n)
 
     # Sol 2. Math
@@ -25,7 +25,7 @@ class Solution:
     # Time Complexity = O(n+n) = O(n)
     # Space Complexity = O(n)
 
-    # Sol 3. Bit Manipulation
+    # Sol 3. Bit Manipulation, consider this as binary numbers
     # XOR, in python 3, it is described as ^ operator
     # a xor a = 0, a xor 0 = a
     def singleNumber(self, nums):
@@ -37,5 +37,6 @@ class Solution:
         for i in nums:
             a ^= i
         return a
+
     # Time Complexity: O(n)
     # Space Complexity: O(1)
