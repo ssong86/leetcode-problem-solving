@@ -2,12 +2,14 @@ class Solution {
 public:
     bool canConstruct(string ransomNote, string magazine) {
         
-        /*
-         * Time Complexity: O(n)
+        /* Time Complexity: O(n)
          * Space complexity: O(n)
-         * 
         */
         map<char, int> a;
+        
+        if(magazine.length() < ransomNote.length())
+            return false;
+
         
         for(char b : magazine){
              a[b]++;
