@@ -40,3 +40,12 @@ class Solution:
 
     # Time Complexity: O(n)
     # Space Complexity: O(1)
+
+    # Sol 4. Using Count
+    class Solution:
+        def singleNumber(self, nums: List[int]) -> int:
+            for i in nums:
+                if nums.count(i) == 1:
+                    return i
+    # Time Complexity: O(n)
+    # Space Complexity: O(1)
