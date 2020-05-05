@@ -6,17 +6,16 @@ class Solution:
             return 1
         
         # ex) 5 = 101, 1 = 001
-        # 101 XOR 001 = 100
-        # 100 XOR 010 = 110
-        # 110 XOR 100 = 010
-        
+        # 101 XOR 001 = 100 | 101
+        # 100 XOR 010 = 110 | 010
+        # 110 XOR 100 = 010 | 001
+        #                   | 000
         loop_controller = num
         bit_mask = 1
         while loop_controller:
             # flip current bit
             # XOR
             num = num ^ bit_mask
-
             bit_mask = bit_mask << 1
             loop_controller = loop_controller >> 1
         return num
