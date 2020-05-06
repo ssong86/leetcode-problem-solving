@@ -15,3 +15,38 @@ class Solution(object):
             i += 1
         # Time Complexity: O(n)
         # Space Complexity: O(1)
+    
+    # Sol 2. Brute Force
+    def moveZeroes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """
+        count_zeroes = 0
+        while 0 in nums:
+            nums.remove(0)
+            count_zeroes += 1
+        
+        for i in range(count_zeroes):
+            nums.append(0)
+        # Time Complexity: O(n)
+        # Space Complexity: O(1)
+        
+   
+    # Sol 3. Revision of Sol 2
+    def moveZeroes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """
+        n = len(nums)
+        for i in xrange(n):
+            if nums[i] == 0:
+                nums.remove(nums[i])
+                nums.append(0)
+            else:
+                continue
+        # Time Complexity: O(n)
+        # Space Complexity: O(1)
+        
+
