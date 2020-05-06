@@ -39,7 +39,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: None Do not return anything, modify nums in-place instead.
         """
-        n = len(nums)
+        n = len(nums) # len is in-place, so if you update in the loop, this can be affected
         for i in xrange(n):
             if nums[i] == 0:
                 nums.remove(nums[i])
