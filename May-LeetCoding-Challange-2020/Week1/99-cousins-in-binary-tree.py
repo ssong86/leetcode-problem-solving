@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    # Sol 1. DFS
+    # Sol 1. Depth first search tree
     def isCousins(self, root: TreeNode, x: int, y: int) -> bool:
         x_level, x_parent = self.dfs(root, None, 0, x)
         y_level, y_parent = self.dfs(root, None, 0, y)
