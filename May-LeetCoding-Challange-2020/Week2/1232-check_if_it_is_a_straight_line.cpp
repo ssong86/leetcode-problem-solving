@@ -4,6 +4,7 @@ public:
     /* Time Complexity: O(n)
      * Space Complexity: O(1)
     */
+   
     bool checkStraightLine(vector<vector<int>> &coordinates) {
         
         if(coordinates.size() == 2){
