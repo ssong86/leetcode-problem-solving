@@ -4,8 +4,13 @@ class Solution:
         # print(coordinates[0])
         # delta = (yn-y0)/(xn-x0), fuck this
         # (y1-y0)/(x1-x0) = (yn-y0)/(xn-x0)
+        # Base case
+        if (len(coordinates)==2):
+            return True
+            
         x0,y0 = coordinates[0]
         x1,y1 = coordinates[1]
+        # croos 
         for i in range(2,len(coordinates)):
             xn, yn = coordinates[i]
             if (y1-y0)*(xn-x0) == (yn-y0)*(x1-x0):
