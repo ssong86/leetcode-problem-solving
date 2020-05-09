@@ -1,0 +1,31 @@
+class Solution {
+public:
+    
+    /* Time Complexity: O(n)
+     * Space Complexity: O(1)
+    */
+    bool checkStraightLine(vector<vector<int>> &coordinates) {
+        
+        if(coordinates.size() == 2){
+            return true;
+        }
+        
+        int n = coordinates.size()-1;
+        
+        int x, y, x1, y1, x2, y2;
+        x = coordinates[0][0];
+        y = coordinates[0][1];
+        x1 = coordinates[1][0];
+        y1 = coordinates[1][1];
+        
+        for(int i = 2; i < n; i++){
+            x2 = coordinates[i][0];
+            y2 = coordinates[i][1];
+            
+            if((y1-y)*(x2-x1) != (y2-y1)*(x1-x))
+                return false;
+        }
+        
+        return true;
+    }
+};
