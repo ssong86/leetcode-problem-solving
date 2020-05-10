@@ -7,6 +7,8 @@ class Solution(object):
         :type num: int
         :rtype: bool
         """
+        if num == 0:
+            return False
         a0 = 1
         an = 0
         while an < num:
