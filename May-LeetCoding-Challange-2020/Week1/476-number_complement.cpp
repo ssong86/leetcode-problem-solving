@@ -20,6 +20,7 @@ public:
             num /= 2;
         }
         
+
         if(num%2 == 0){
             result += pow(2,count);
         }

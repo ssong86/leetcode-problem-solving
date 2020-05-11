@@ -21,7 +21,5 @@ public:
             nums.erase(nums.begin() + a[i] - i);
             nums.push_back(0);
         }
-        
-        
     }
 };

@@ -12,7 +12,7 @@
             a.push_back(nums[i]);
             
         }
-        
+
         for(int i = 0; i < startIndex; i++){
             a.push_back(nums[i]);
         }

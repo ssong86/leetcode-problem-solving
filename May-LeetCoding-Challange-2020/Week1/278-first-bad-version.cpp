@@ -30,7 +30,6 @@ public:
                 pivot = start + (end - start)/2;
             }
         }
-            
     }
 };
 
