@@ -3,6 +3,9 @@ public:
 
     /* Time Complexity: O(n + N + N) = O(n + N)
      * Space Complexity: O(n + N) = O(n + N)
+     * Run code: 0ms
+     * Runtime: 396 ms above 15.74% 
+     * Memory Usage: 66.8 MB above 12.50%
     */
     int findJudge(int N, vector<vector<int>>& trust) {
         
