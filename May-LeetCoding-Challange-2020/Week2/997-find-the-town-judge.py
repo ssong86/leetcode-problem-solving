@@ -19,5 +19,5 @@ class Solution(object):
         # Time Complexity: O(t+n)
         # Space Complexity: O(n)
         # Run Code Runtime: 24 ms
-        # Submit Runtime: 952 ms, 16.10% faster
-        # Submit Memory Usage: 17.7 mb, 33.33% faster
+        # Submit Runtime: 952 ms, 16.10% faster.
+        # Submit Memory Usage: 17.7 mb, 33.33% faster.
