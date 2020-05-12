@@ -9,6 +9,7 @@ class Solution(object):
         """
         if num == 0:
             return False
+
         a0 = 1
         an = 0
         while an < num:
@@ -19,4 +20,17 @@ class Solution(object):
         return False
         
         # Time Complexity: O(n)
+        # Space Complexity: O(1)
+
+    # Sol 2. 
+    def isPerfectSquare(self, num):
+        """
+        :type num: int
+        :rtype: bool
+        """
+        n = num ** (0.5)
+
+        return n.is_integer()
+
+        # Time Complexity: O(1)
         # Space Complexity: O(1)

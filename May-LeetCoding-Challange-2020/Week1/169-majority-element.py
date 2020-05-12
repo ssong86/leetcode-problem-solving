@@ -9,3 +9,5 @@ class Solution:
                 return i
     # Time Complexity: O(n)
     # Space Complexity: O(n)
+
+    # Sol 2. Brute Force

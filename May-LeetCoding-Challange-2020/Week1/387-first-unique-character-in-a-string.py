@@ -6,7 +6,7 @@ class Solution:
         for idx, ch in enumerate(s): # Enumerate returns (count as index, character)
             if c[ch] == 1:
                 return idx
-        return -1
+        return -1 # Edge Case
         # Time Complexity: O(n)
         # Space Complexity: O(n)
         

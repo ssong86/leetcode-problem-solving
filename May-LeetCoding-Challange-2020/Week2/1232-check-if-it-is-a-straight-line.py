@@ -7,7 +7,7 @@ class Solution:
         # Base case
         if (len(coordinates)==2):
             return True
-            
+
         x0,y0 = coordinates[0]
         x1,y1 = coordinates[1]
         # croos 
