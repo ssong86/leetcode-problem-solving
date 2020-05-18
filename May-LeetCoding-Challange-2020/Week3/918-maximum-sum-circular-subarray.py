@@ -22,7 +22,7 @@ class Solution:
             
         return global_max
     # Time Complexity: O(n)
-    # Space Complexity: O(n)
+    # Space Complexity: O(1)
     # Run Code Runtime: 24 ms
     # Submission Runtime: 1204 ms, faster than 5.12% 
     # Submission Memory: 17.9 MB, faster than 100% 
