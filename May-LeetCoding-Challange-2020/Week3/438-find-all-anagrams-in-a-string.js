@@ -2,75 +2,54 @@
  * @param {string} s
  * @param {string} p
  * @return {number[]}
+ * Runtime: 100 ms, faster than 73.01% of JavaScript online submissions for Find All Anagrams in a String.
+ * Memory Usage: 37.3 MB, less than 100.00% of JavaScript online submissions for Find All Anagrams in a String.
  */
 var findAnagrams = function(s, p) {
-    if (!s || !p || s.length < p.length) {
-        return [];
-    }
-
-    const map = new CustomMap(p);
-    const anagramSize = p.length;
+    const hashTable = new Array(26).fill(0);
     const result = [];
 
-    let start = 0, end = -1;
+    if (!s || !p || s.length < p.length) {
+        return result;
+    }
+
+    for (const c of p) {
+        hashTable[getCodePoint(c)]++;
+    }
+
+    let start = 0, end = 0, size = p.length;
+
     while (end < s.length) {
-        console.log(map.map, start, end);
-        if (end - start + 1 < anagramSize) {
-            map.decrementByKey(s.charAt(++end));
-        } else {
-            if (map.isEmpty()) {
-                result.push(start);
+        if (end - start === p.length) {
+            const codePointAtStart = getCodePoint(s.charAt(start));
+
+            if (hashTable[codePointAtStart] >= 0) {
+                size++;
             }
 
-            if (map.isValidInput(s.charAt(start))) {
-                map.incrementByKey(s.charAt(start));
-            }
-            console.log(map.map);
-
+            hashTable[codePointAtStart]++;
             start++;
-            end++;
+        }
 
-            map.decrementByKey((s.charAt(end)));
+        const codePointAtEnd = getCodePoint(s.charAt(end));
+
+        hashTable[codePointAtEnd]--;
+        end++;
+
+        if (hashTable[codePointAtEnd] >= 0) {
+            size--;
+        }
+
+        if (size === 0) {
+            result.push(start);
         }
     }
 
     return result;
 };
 
-function CustomMap (string) {
-    this.map = new Map();
-    this.set = new Set();
-
-    for (const char of string) {
-        this.incrementByKey(char);
-        this.set.add(char);
-    }
-}
-
-CustomMap.prototype.decrementByKey = function (key) {
-    if (this.map.has(key)) {
-        if (this.map.get(key) === 1) {
-            this.map.delete(key);
-        } else {
-            this.map.set(key, this.map.get(key) - 1);
-        }
-    }
-}
-
-CustomMap.prototype.incrementByKey = function (key) {
-    if (this.map.has(key)) {
-        this.map.set(key, this.map.get(key) + 1);
-    } else {
-        this.map.set(key, 1);
-    }
-}
-
-CustomMap.prototype.isValidInput = function (key) {
-    return this.set.has(key);
-}
-
-CustomMap.prototype.isEmpty = function () {
-    return this.map.size === 0;
+function getCodePoint (char) {
+    return char.charCodeAt(0) % 'a'.charCodeAt(0);
 }
 
 console.log(findAnagrams("cbaebabacd", "abc"));
