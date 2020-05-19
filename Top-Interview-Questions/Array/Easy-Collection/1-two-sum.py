@@ -4,9 +4,8 @@ class Solution:
         d={}
         for i,num in enumerate(nums):
             if target-num in d:
-                print(d)
                 return d[target-num], i
-            d[num]=i
+            d[num]=i # Store the index of num array to d
     # Time Complexity: O(n)
     # Space Complexity: O(n)
     # Run Code Runtime: 48ms

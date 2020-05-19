@@ -1,5 +1,5 @@
 class Solution:
-    # Sol 2. 
+    # Sol 1. Dictionaries
     class Solution:
         def findAnagrams(self, s: str, p: str) -> List[int]:
             s_len = len(s)
@@ -31,7 +31,7 @@ class Solution:
         # Submit Runtime: 208ms, 38.82% faster
         # Submit Memory: 15mb, 8.70% faster
 
-    # Sol 1. Using Dictionaries
+    # Sol 2. Using Dictionaries
     def findAnagrams(self, s: str, p: str) -> List[int]:
         result = []
         d1 = collections.Counter(p)

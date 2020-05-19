@@ -1,10 +1,10 @@
 class Solution:
-    # Sol 1. USing 3 pointers
+    # Sol 1. Using 3 pointers
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         ret = []
         nums.sort()  
         n = len(nums)
-        
+
         for i in range(n-2): #left, right
             if i>0 and nums[i] == nums[i-1]: # remove duplicate in i
                 continue 
@@ -19,7 +19,7 @@ class Solution:
                 elif total>0:
                     r -= 1
                 else:
-                    ret.append([nums[i],nums[l],nums[r]])
+                    ret.append([nums[i],nums[l],nums[r]]) 
                     while l<r and nums[l]==nums[l+1]: # remove duplicate in l
                         l += 1
                     while l<r and nums[r]==nums[r-1]: # remove duplicate in r

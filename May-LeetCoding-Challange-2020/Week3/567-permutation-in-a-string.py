@@ -1,29 +1,32 @@
 class Solution:
-    # Sol 1. Using Counter, Hash
-    def findAnagrams(self, s: str, p: str) -> List[int]:
-        s_len = len(s)
-        p_len = len(p)
+    def checkInclusion(self, s1: str, s2: str) -> bool:
+        if len(s1) > len(s2):
+            return False
         
-        if s_len < p_len:
-            return []
+        s1_len=len(s1)
+        # Edge case
+        if s1_len == 0:
+            return True
+
+        s1_counter = Counter(s1)
+        s2_counter = Counter()
         
-        p_count = Counter(p)
-        s_count = Counter()
-        result = []
-        
-        for i in range(s_len):
-            s_count[s[i]] += 1
-            
-            if i>= p_len:
-                if s_count[s[i-p_len]] == 1:
-                    del s_count[s[i-p_len]]
+        for index, char in enumerate(s2):
+            s2_counter[char] += 1       
+            if index >= s1_len:
+                del_element_s2 = s2[index - s1_len]
+                
+                if s2_counter[del_element_s2] == 1:
+                    del s2_counter[del_element_s2]
                 else:
-                    s_count[s[i-p_len]] -= 1
+                    s2_counter[del_element_s2] -= 1
                     
-            if p_count == s_count:
-                result.append(i-p_len + 1)
+            if s2_counter == s1_counter:
+                return True
+            else:
+                continue
         
-        return result
+        return False
     # Time Complexity: O(n)
     # Space Complexity: O(n+n) -> O(n)
     # Run Code Runtime: 44 ms
