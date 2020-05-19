@@ -1,4 +1,36 @@
 class Solution:
+    # Sol 2. 
+    class Solution:
+        def findAnagrams(self, s: str, p: str) -> List[int]:
+            s_len = len(s)
+            p_len = len(p)
+            
+            if s_len < p_len:
+                return []
+            
+            p_count = Counter(p)
+            s_count = Counter()
+            result = []
+            
+            for i in range(s_len):
+                s_count[s[i]] += 1
+                
+                if i>= p_len:
+                    if s_count[s[i-p_len]] == 1:
+                        del s_count[s[i-p_len]]
+                    else:
+                        s_count[s[i-p_len]] -= 1
+                        
+                if p_count == s_count:
+                    result.append(i-p_len + 1)
+            
+            return result
+        # Time Complexity: O(n)
+        # Space Complexity: O(n)
+        # Run Code Runtime: 20 ms
+        # Submit Runtime: 208ms, 38.82% faster
+        # Submit Memory: 15mb, 8.70% faster
+
     # Sol 1. Using Dictionaries
     def findAnagrams(self, s: str, p: str) -> List[int]:
         result = []
@@ -17,3 +49,4 @@ class Solution:
                 del d2[s[start]]
         
         return result
+

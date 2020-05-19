@@ -8,5 +8,8 @@ class Solution:
                 return d[target-num], i
             d[num]=i
     # Time Complexity: O(n)
-    # Hash Map: O(n)
+    # Space Complexity: O(n)
+    # Run Code Runtime: 48ms
+    # Submit Runtime: 100ms, 32.69% faster
+    # Submit Memory: 15.2mb, 5.11% faster
         
