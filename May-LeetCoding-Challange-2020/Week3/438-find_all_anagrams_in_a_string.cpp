@@ -21,6 +21,8 @@ public:
             temp[p[i]]++;
         }
         
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
         map<char, int> temp2;
         bool done = true;
         
@@ -54,7 +56,7 @@ public:
     }
 };
 
-// First Solution: Sliding Window Algorithm
+// Solution: Sliding Window Algorithm
 // Time Complexity: O(n) length of s
 // Space Complexity: O(1) only 26 maps at most
 // Runtime: 60 ms, faster than 33.12%
@@ -78,7 +80,18 @@ public:
         
         //initializing starting window point and ending window point 
         int start = 0, end = 0;
-        
+
+        [0,1]
+        [1,1]
+        [0,0]
+        [ab]
+        [abcde]
+             0
+          0
+           
+        s
+         97 98
+        'a' 'b'
         //add first window to vector
         while(end < window){
             pMap[p[end]-'a']++;
@@ -89,6 +102,11 @@ public:
         //adjust end 
         end--;
         
+        [abcde] [0,0][1,1][2,1]
+            00
+        [ab]    [0,1],1,1][0,0]
+          
+
         //loop until reaches the end of string
         while(end < size){
             
@@ -103,7 +121,7 @@ public:
             if(end < size)
                 sMap[s[end]-'a']++;
             
-            //remove old start point and update start point
+            //remove old start point and update start 
             sMap[s[start]-'a']--;
             start++;
         }

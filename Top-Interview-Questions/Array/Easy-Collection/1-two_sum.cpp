@@ -9,11 +9,11 @@ public:
         
         vector<int> temp;
 
-        for(int i = 0; i < nums.size(); i++){
+        for(int i = 0; i < nums.size(); i++){ // pick first number for addition
             
-            for(int j = i+1; j < nums.size(); j++){
+            for(int j = i+1; j < nums.size(); j++){ // pick second number for addition
                 
-                if(target == nums[j] + nums[i]){
+                if(target == nums[j] + nums[i]){ 
                     temp.push_back(i);
                     temp.push_back(j);
                 }
