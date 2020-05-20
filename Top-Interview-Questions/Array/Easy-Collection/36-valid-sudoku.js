@@ -1,6 +1,12 @@
 /**
  * @param {character[][]} board
  * @return {boolean}
+ *
+ * Time Complexity
+ * O(1) since the board will always be 9x9, or have 81 elements
+ *
+ * Space Complexity
+ * O(1) since the board will always be 9x9, or have 81 elements
  */
 var isValidSudoku = function(board) {
     if (!board) {
