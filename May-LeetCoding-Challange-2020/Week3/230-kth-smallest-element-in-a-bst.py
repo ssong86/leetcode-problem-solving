@@ -1,4 +1,4 @@
- # Definition for a binary tree node.
+# Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
@@ -18,9 +18,9 @@ class Solution:
         return in_left+root_val+in_right
         # Time Complexity: O(n)
         # Space Complexity: O(1)
-        # Run Code Runtime: 24 ms
-        # Submit Runtime: 80 ms, 10.25% faster
-        # Submit Memory: 17.5 mb, 5.45% less
+        # Run Code Runtime: 32 ms
+        # Submit Runtime: 108 ms, 5.25% faster
+        # Submit Memory: 17.7 mb, 5.45% less
     
 # Definition for a binary tree node.
 # class TreeNode:
@@ -28,9 +28,6 @@ class Solution:
 #         self.val = val
 #         self.left = left
 #         self.right = right
-
-                
-                
 
     # Sol 2. Same without helper function
     def kthSmallest(self, root, k):
