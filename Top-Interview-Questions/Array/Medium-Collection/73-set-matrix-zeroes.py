@@ -16,14 +16,15 @@ class Solution:
 
         # Start iterations from index of 1 in each row and col
         # To change the col and row flags value to be true
-        for i in range(1,n):
-            if matrix[i][0] == 0:
-                col_flag = True
-                break
-        for j in range(1,m):
-            if matrix[0][j] == 0:
-                row_flag = True
-                break
+        if flag == False:
+            for i in range(1,n):
+                if matrix[i][0] == 0:
+                    col_flag = True
+                    break
+            for j in range(1,m):
+                if matrix[0][j] == 0:
+                    row_flag = True
+                    break
         
         # Start changing values of the matrix inside the border line
         for i in range(1,n):
