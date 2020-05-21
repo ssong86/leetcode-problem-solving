@@ -17,7 +17,7 @@ class Solution:
         in_right = self.in_order(root.right) 
         return in_left+root_val+in_right
         # Time Complexity: O(n)
-        # Space Complexity: O(1)
+        # Space Complexity: O(n)
         # Run Code Runtime: 32 ms
         # Submit Runtime: 108 ms, 5.25% faster
         # Submit Memory: 17.7 mb, 5.45% less
