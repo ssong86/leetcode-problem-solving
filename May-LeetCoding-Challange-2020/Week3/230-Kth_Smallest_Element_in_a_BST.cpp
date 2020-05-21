@@ -11,14 +11,13 @@
  * };
  */
 
-// Time Complexity: O(logn)
+// Time Complexity: O(logn) X O(k) O
 // Space Complexity: O(1)
 // Runtime: 24 ms, faster than 66.61%
 // Memory Usage: 24 MB, less than 6.67%
 
 // Best case: kth on the left most tree O(height of tree)
-// Worst case: kth on the right most tree O(logn) in which n is size of the tree
-
+// Worst case: kth on the right most tree O(k) in which n is size of the tree
 
 class Solution {
 public:

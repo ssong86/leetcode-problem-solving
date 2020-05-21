@@ -1,4 +1,4 @@
-// Time Complexity: O(n^n)
+// Time Complexity: O(logn)
 // Space Complexity: O(1)
 // Runtime: 0 ms, faster than 100.00%
 // Memory Usage: 7.4 MB, less than 100.00%
