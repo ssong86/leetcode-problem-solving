@@ -16,6 +16,10 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
+        # Edge Case
+        if len(s)<=1:
+            return
+        
         left_pointer = 0
         right_pointer = len(s) - 1
         while left_pointer < right_pointer:
@@ -39,4 +43,4 @@ class Solution:
         #     tmp = s[i]
         #     s[i] = s[n-1-i]
         #     s[n-1-i] = tmp
-        s[:] = s[::-1]
+        s[::] = s[::-1]
