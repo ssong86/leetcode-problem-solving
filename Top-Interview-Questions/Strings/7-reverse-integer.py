@@ -16,7 +16,7 @@ class Solution:
         if sign:
             ans = -1 * (ans)
         
-        # overflow control
+        # overflow control, you can put this in the while loop
         if ans < -(2**31) or ans > (2**31-1):
             return 0
         
