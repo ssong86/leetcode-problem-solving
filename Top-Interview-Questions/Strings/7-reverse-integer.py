@@ -3,6 +3,8 @@ class Solution:
     def reverse(self, x: int) -> int:
         ans = 0
         sign = False
+        if x>-10 and x<10:
+            return x
                 
         if x<0:
             sign = True
