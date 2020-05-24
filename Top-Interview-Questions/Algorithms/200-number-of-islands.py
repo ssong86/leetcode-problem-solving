@@ -22,7 +22,7 @@ class Solution:
         self.dfs(grid, i, j+1)
         self.dfs(grid, i, j-1)
 
-    # Time Complexity: O(m*n) => O(n^2)
+    # Time Complexity: O(m*n)
     # Space Complexity: O(m*n), where the map is filled with all lands
     # Run Code Runtime: 44 ms
     # Submit Runtime: 152 ms, 51% faster

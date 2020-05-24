@@ -10,6 +10,17 @@
  * Runtime: 84 ms, faster than 41.65% of JavaScript online submissions for Sort Characters By Frequency.
  * Memory Usage: 42.9 MB, less than 61.54% of JavaScript online submissions for Sort Characters By Frequency.
  */
+
+ /* bucket sort
+  * time complexity: O(n+k)
+  * ex) 사람 태어난 년도
+  * 1800 1810, 1820, 1830 bucket 에 넣어서 계산
+  * 
+  * radix sort -> O(n)
+  * 32 bit 
+  * 
+  * 두가지 케이스는 사용할 수 있는 경우가 정해져 있음, 고로 일반적으론 nlogn
+  */
 var frequencySort = function(s) {
     if (!s || s.length === 1) {
         return s;
