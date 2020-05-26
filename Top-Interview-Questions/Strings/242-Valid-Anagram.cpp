@@ -15,7 +15,7 @@ public:
             return false;
         
         for(int i = 0; i < s.length(); i++){
-            a[s[i] - 'a']++;
+            a[s[i] - 'a']++; // string - string = int (ascii code)
             b[t[i] - 'a']++;
         }
                 

@@ -25,8 +25,10 @@ class Solution:
             right -= 1
             
         return True
-    # Time Complexity: O(n/2) -> O(n), where n is the length of s
+    # Time Complexity: O(n), where n is the length of s
     # Space Complexity: O(1), no additional space
     # Run Code Runtime: 44ms
     # Submit Runtime: 44ms, 80.17% faster
     # Submit Memory: 14.4 mb, 33.33% less
+
+    # string - string = int (ascii code)
