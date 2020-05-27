@@ -22,6 +22,6 @@ class Solution:
     # TC: O(n), where n is the length of haystack, worst case is that
     # we have to go thru all the element in haystack and needle length is one, and 
     # the index is located in the last poition of haystack
-    # SC: O(1), no additional memories
+    # SC: O(n), no additional memories
     # Runtime: 36 ms, faster than 41.06%
-    # 13.9 MB, less than 12.31%
+    # Space: 13.9 MB, less than 12.31%
