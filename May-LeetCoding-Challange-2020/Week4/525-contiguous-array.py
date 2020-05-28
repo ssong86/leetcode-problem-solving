@@ -16,9 +16,9 @@ class Solution:
             # check store_index with index - earlist index
             # look up store_index         
             if cum_sum == 0:
-                max_len = i+1
-            elif cum_sum in store_index:
-                max_len = max(max_len, i-store_index[cum_sum])
+                max_len = i+1 
+            elif cum_sum in store_index: # finding element in Maps takes O(1), very good
+                max_len = max(max_len, i-store_index[cum_sum]) 
             else:
                 store_index[cum_sum] = i
             

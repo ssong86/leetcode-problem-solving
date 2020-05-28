@@ -16,7 +16,7 @@ class Solution:
             return 0 # corner case
         for i in range(len(haystack)): # traverse each index, len(heystack) - len(needle) + 1 will be faster
                                        # no need to look up the element after the haystack 
-            if haystack[i:i+len(needle)] == needle:
+            if haystack[i:i+len(needle)] == needle: # String, List slicing takes O(n)
                 return i
         return -1
     # TC: O(n), where n is the length of haystack, worst case is that
