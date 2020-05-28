@@ -23,7 +23,7 @@ class Solution:
         # 6: 312211, three of element 1, two of element 2, one of element 1
         # 7: 13112221, ...
 
-        # TC: O(n)
-        # SC: O(n), string slicing
+        # TC: O(n), O(1) if we say 1<=n<=30
+        # SC: O(n), string slicing, O(1) if we say 1<=n<=30
         # Runtime: 20 ms, faster than 99.95%
         # Memory: 13.9 MB, less than 6.38% 
