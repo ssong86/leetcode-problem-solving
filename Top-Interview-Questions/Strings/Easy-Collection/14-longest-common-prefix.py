@@ -13,7 +13,8 @@ class Solution:
                       
         return prefix_str
     
-    # TC: O(n), worst case: prefix of a entire string
+    # TC: O(n*m), where n is the shortest or prefix string length, m is the number of strings in str
+    # worst case: prefix of a entire string
     # SC: O(n), splitting string uses extra memory
     # Runtime: 32 ms, faster than 74.43%
     # Memory: 13.9 MB, less than 6.67% 

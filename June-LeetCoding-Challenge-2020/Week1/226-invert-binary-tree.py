@@ -7,6 +7,9 @@
 class Solution:
     # Sol 1. Using Stack
     def invertTree(self, root: TreeNode) -> TreeNode:
+        if not root:
+            return None
+            
         stack=[root]
         while stack:
             node = stack.pop()
