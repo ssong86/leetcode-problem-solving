@@ -9,7 +9,7 @@ class Solution:
     def invertTree(self, root: TreeNode) -> TreeNode:
         if not root:
             return None
-            
+
         stack=[root]
         while stack:
             node = stack.pop()
@@ -32,4 +32,4 @@ class Solution:
         return root
 
     # TC: O(N)
-    # SC: O(N)
+    # SC: O(logN)
