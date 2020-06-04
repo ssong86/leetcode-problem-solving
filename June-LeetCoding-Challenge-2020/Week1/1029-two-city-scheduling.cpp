@@ -14,45 +14,22 @@
 // Memory Usage: 8 MB, less than 100.00%
 class Solution {
 public:
-    ListNode* removeNthFromEnd(ListNode* head, int n) {
+    int twoCitySchedCost(vector<vector<int>>& costs) {
         
-        if(head->next == NULL)
-            return NULL;
+        int res = 0;
+                
+        sort(costs.begin(), costs.end(), [](vector<int> &a, vector<int> &b) {
+            return a[1] - a[0] > b[1] - b[0];   
+        });
         
-        ListNode* tail = head;
-        
-        if(n == 1){
-            while(tail->next->next != NULL){
-                tail = tail->next;
+        for(int i = 0; i < costs.size(); i++){
+            if(i < costs.size()/2){
+                res+=costs[i][0];
+            }else{
+                res+=costs[i][1];
             }
-            tail->next = NULL;
-            return head;
         }
         
-        int count = 0;
-        
-        while(tail->next != NULL){
-            count++;
-            tail = tail->next;
-        }
-        
-        if(count == n-1){
-            head = head->next;
-            return head;
-        }
-        
-        tail = head;
-        
-        for(int i = 0; i < count-n; i++){
-            tail = tail->next;
-        }        
-        
-        if(head == tail){
-            head->next = head->next->next;
-        }else {
-            tail->next = tail->next->next;
-        }
-        
-        return head;
+        return res;
     }
 };
