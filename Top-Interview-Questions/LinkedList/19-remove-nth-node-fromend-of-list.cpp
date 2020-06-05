@@ -9,7 +9,7 @@
  * };
  */
 
-// Time Complexity: O(head-n)
+// Time Complexity: O(count)
 // Space Complexity: O(1)
 // Runtime: 0 ms, faster than 100.00%
 // Memory Usage: 10.5 MB, less than 5.26%
@@ -17,6 +17,7 @@ class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         
+        //
         if(head->next == NULL)
             return NULL;
         
