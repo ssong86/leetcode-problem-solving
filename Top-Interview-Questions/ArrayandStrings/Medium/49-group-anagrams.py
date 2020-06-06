@@ -15,7 +15,8 @@ class Solution:
         for item in dic.values():
             result.append(item)
         return result
-    # TC: O(n), where n is the number of items in strs
+        # or simply return dic.values() there is difference in terms of order of each element
+    # TC: O(n), where n is the number of items in strs, worst: O(n*mlogm), where m is the number of charaters of the string
     # SC: O(n) + O(n) -> O(n)
     # Runtime: 100 ms, faster than 83.41% 
     # Memory: 16.6 MB, less than 81.83%
