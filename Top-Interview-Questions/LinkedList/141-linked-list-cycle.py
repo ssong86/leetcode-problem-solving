@@ -24,4 +24,4 @@ class Solution:
         # TC: O(N), where n is the length of linked list
         # SC: O(1)
         # Runtime: 52 ms, faster than 46.15%
-        # Memory Usage: 16.9 MB, less than 61.27%
+        # Memory Usage: 16.9 MB, less than 61.27%.

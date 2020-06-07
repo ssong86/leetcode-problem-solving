@@ -18,4 +18,4 @@ class Solution:
         # TC: O(n^2)
         # SC: O(n), where n is the number of ppl in queue
         # Runtime: 1120 ms, faster than 6.32%
-        # Memory Usage: 14.3 MB, less than 24.17%
+        # Memory Usage: 14.3 MB, less than 24.17%.
