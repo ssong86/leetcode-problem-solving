@@ -26,3 +26,25 @@ public:
         return number_of_ways[amount];
     }
 };
+
+class Solution {
+public:
+    int change(int amount, vector<int>& coins) {
+        
+        int table[amount+1];
+        table[0] = 1;
+        
+        for(int i = 1; i <= amount; i++){
+            table[i] = 0;
+        }
+        
+        for(int i = 0; i < coins.size(); i++){
+           for(int j = 1; j <= amount; j++){
+               if(j >= coins[i])
+                   table[j] += table[j - coins[i]];
+           }
+        }
+        
+        return table[amount];
+    }
+};
