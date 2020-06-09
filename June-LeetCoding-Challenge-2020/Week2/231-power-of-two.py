@@ -17,4 +17,4 @@ class Solution:
         
         return n==1
     # TC: O(logn)
-    # SC: O(1)
+    # SC: O(1).
