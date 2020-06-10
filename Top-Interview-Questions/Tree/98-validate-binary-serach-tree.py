@@ -5,7 +5,8 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def isValidBST(self, root: TreeNode) -> bool:
+    # Sol 1. Using stack
+    def isValidBST(sel f, root: TreeNode) -> bool:
         stack, res = [], []
         while True:
             while root:
@@ -25,3 +26,5 @@ class Solution:
             root = node.right
     # TC: O(n)
     # SC: O(n), worst, O(logn), best
+
+    # Sol 2. Recursion
