@@ -15,5 +15,5 @@ class Solution:
             else:
                 right_bound = ptr - 1
         return left_bound 
-    # TC: O(logn),n is the length of nums
-    # SC: O(1)
+    # TC: O(logn),n is the length of nums.
+    # SC: O(1).
