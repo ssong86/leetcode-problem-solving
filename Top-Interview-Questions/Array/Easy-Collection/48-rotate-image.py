@@ -14,5 +14,5 @@ class Solution:
         # Time Complexity: O(n^2)
         # Space Complexity: O(1)
         # Run Code Runtime: 44 ms
-        # Submit Runtime: 56 ms, 10.18% faster
-        # Submit Memory: 13.9 mb, 6.25% less
+        # Submit Runtime: 56 ms, 10.18% faster.
+        # Submit Memory: 13.9 mb, 6.25% less.

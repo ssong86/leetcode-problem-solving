@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.next = next
 class Solution:
+    # Sol 1. Using stack
     def isPalindrome(self, head: ListNode) -> bool:
         if not head or not head.next:
             return True
@@ -17,3 +18,4 @@ class Solution:
     # SC: O(n)
     # Runtime: 124 ms, faster than 5.86%
     # Memory Usage: 24.2 MB, less than 21.00%
+

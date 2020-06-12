@@ -3,7 +3,7 @@
  * @return {string}
  * Runtime: 64 ms, faster than 40.44% of JavaScript online submissions for Count and Say.
  * Memory Usage: 37.4 MB, less than 8.33% of JavaScript online submissions for Count and Say.
- * TC: O(n), but since 1<=n<=30, it is also legit to say O(1)
+ * TC: O(n), but since 1<=n<=30, it is also legit to say O(1) 
  * SC: O(n), but since 1<=n<=30, it is also legit to say O(1)
  */
 var countAndSay = function(n) {

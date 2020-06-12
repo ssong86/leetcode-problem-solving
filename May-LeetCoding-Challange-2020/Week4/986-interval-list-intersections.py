@@ -19,4 +19,4 @@ class Solution:
                 b += 1
         return ret_list
     # Time Complexity: O(m+n) -> O(n), where m is # of elements in A and n is # of elements in B respectively
-    # Space Complexity: worst case: O(m+n-1) -> O(m+n)
+    # Space Complexity: worst case: O(m+n-1) -> O(m+n), O(1) if we dont include the result
