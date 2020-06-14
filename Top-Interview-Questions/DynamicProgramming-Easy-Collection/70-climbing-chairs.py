@@ -14,3 +14,20 @@ class Solution:
     # TC: O(n)
     # SC: O(n)
     # Runtime: 28 ms, faster than 74.05%
+
+    # Sol 2. Fibonacci
+    class Solution:
+    def climbStairs(self, n: int) -> int:
+        # we only can use 1 or 2 step
+        if n == 1:
+            return n
+        one = 1
+        two = 2
+        for i in range(3,n+1):
+            ret = one+two
+            one = two
+            two = ret
+        
+        return two
+    # TC: O(n)
+    # SC: O(1)
