@@ -3,6 +3,10 @@ class Solution:
         buy, sell = float('inf'), 0
         for p in prices:
             buy, sell = min(buy, p), max(sell, p-buy)
+            # if p < buy:
+            #    minprice = p
+            # elif p-minprice > sell:
+            #    sell = p - minprice
         return sell
     # TC: O(n), n is the length of prices list
     # SC: O(1)

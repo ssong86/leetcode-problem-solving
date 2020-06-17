@@ -21,6 +21,8 @@ class Solution:
                 blue -=1
         # TC: O(n)
         # SC: O(1)
+        # Runtime: 20 ms, faster than 99.72% 
+        # Memory Usage: 14 MB, less than 5.32%
 
     # Sol 2. Bucket Sort, n-space memory
     def sortColors(self, nums: List[int]) -> None:
