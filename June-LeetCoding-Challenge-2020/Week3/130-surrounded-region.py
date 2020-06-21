@@ -29,6 +29,6 @@ class Solution:
                 elif board[r][c] == 'O':
                     board[r][c] = 'X'
     # TC: O(H*W)
-    # SC: O(N), n = h + w if anything contains O on the boundary
+    # SC: O(N), n = max(h, w) if anything contains O on the boundary, best O(1)
     # Runtime: 148 ms, faster than 55.81% 
     # Memory Usage: 15.6 MB, less than 34.04%  

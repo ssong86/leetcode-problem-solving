@@ -7,13 +7,13 @@ class Solution:
         left = 0
         right = n-1
         
-        while left<right: 
+        while left<right: # left <= right 
             mid = (left+right)//2
             if citations[mid] >= n-mid:
-                right = mid
+                right = mid # mid - 1
             else:
                 left = mid+1
-        if citations[left] == 0: return 0
+        if citations[left] == 0: return 0 # [0], dont need it with comments
         return n-left
     # TC: O(logn)
     # SC: O(1)
