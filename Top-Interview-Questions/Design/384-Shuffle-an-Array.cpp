@@ -1,4 +1,4 @@
-// TC: O(n) in shuffled
+// TC: O(n^2) in shuffled because of erase 
 // SC: O(n) # of elements in nums
 // Runtime: 184 ms, faster than 44.06%
 // Memory Usage: 90.6 MB, less than 21.64%
