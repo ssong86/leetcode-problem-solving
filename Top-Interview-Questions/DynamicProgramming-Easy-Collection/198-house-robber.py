@@ -15,7 +15,7 @@ class Solution:
         return dp[-1]
         # TC: O(n)
         # SC: O(n)
-        
+
     # Sol 2. Using Two Sum Vars
     def rob(self, nums: List[int]) -> int:
         even_sum, odd_sum = 0,0
@@ -29,5 +29,5 @@ class Solution:
                 even_sum = max(odd_sum, even_sum+nums[i])
                 # print("even",even_sum)
         return max(odd_sum, even_sum)
-        # TC: O(n)
+        # TC: O(n) -> O(n^2), pop provides n time complexity
         # SC: O(1)
