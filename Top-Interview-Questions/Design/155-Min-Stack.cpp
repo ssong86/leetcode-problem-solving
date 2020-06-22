@@ -1,7 +1,7 @@
 // TC: push: O(nlogn) pop: O(nlogn) top: O(1) getMin: O(1)
-// SC: O(n)
+// SC: O(n) Original and Sorted Array
 // TIME LIMIT EXCEEDED
-// 
+// 17/18 Test Cases Passed
 class MinStack {
 public:
     /** initialize your data structure here. */
