@@ -1,5 +1,6 @@
+// Kadane's algorithm
 // TC: O(n)
-// SC: O()
+// SC: O(1)
 // Runtime: 12 ms, faster than 64.48%
 // Memory Usage: 13.4 MB, less than 22.87%
 class Solution {
