@@ -1,5 +1,5 @@
 // Solution #1 Botton Up Dynamic Programming
-// TC: O(n^2) has to traverse row*col
+// TC: O(row*col size) has to traverse row*col
 // SC: O(size of column) storing value
 // Runtime: 8 ms, faster than 96.89%
 // Memory Usage: 9.1 MB, less than 34.39%
