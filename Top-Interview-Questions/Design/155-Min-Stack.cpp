@@ -70,7 +70,8 @@ public:
 
 // TC: push: O(1) pop: O(1) top: O(1) getMin: O(n)
 // SC: O(n) Original
-// 17/18 Test Cases Passed
+// Runtime: 168 ms, faster than 6.93% 
+// Memory Usage: 16.2 MB, less than 41.58%
 class MinStack {
 public:
     /** initialize your data structure here. */
