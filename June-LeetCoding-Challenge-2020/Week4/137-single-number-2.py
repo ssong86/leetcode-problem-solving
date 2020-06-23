@@ -1,7 +1,13 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        return 1
-    # TC: O(n)
-    # SC: O(1)...
-    # Runtime: 88 ms, faster than 71.22% 
-    # Memory Usage: 16.4 MB, less than 37.73%
+        a, b = 0, 0 
+        for i in nums:
+            b = b ^ (a & i)
+            a = a ^ i
+            not_three = ~(a & b)
+            a, b = not_three&a, not_three&b
+        #print(a)
+        #print(b)
+        return a
+    # O(N)
+    # O(1)
