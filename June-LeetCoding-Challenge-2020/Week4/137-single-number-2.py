@@ -11,3 +11,5 @@ class Solution:
         return a
     # TC: O(N)
     # SC: O(1)
+    # Runtime: 64 ms, faster than 35.19%
+    # Memory Usage: 15.5 MB, less than 42.02%
