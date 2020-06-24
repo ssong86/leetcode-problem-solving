@@ -9,5 +9,5 @@ class Solution:
         #print(a)
         #print(b)
         return a
-    # O(N)
-    # O(1)
+    # TC: O(N)
+    # SC: O(1)
