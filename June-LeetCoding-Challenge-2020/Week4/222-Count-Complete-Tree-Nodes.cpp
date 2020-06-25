@@ -24,7 +24,8 @@ public:
         
         DFS(root);
         
-        return res;
+        return re
+        s;
     }
 };
 
