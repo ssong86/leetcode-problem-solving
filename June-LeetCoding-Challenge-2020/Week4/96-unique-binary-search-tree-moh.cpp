@@ -17,5 +17,5 @@ public:
     }
 };
 
-//TC = O(i) * O(n-i) = O(i^2)?
+//TC = O(n/2)left-sub * O(n/2)right-sub = O((n^2)/4) = O(n^2)
 //SC = O(n) assigned n + 1 length array
