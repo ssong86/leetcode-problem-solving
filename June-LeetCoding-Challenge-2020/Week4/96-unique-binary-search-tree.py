@@ -25,8 +25,8 @@ class Solution:
             return 0
         elif n == 1:
             return 1  
-        mem = {} # memorization table
-        def d_c(start,end):
+        mem = {}  # memoization
+        def d_c(start,end): # divide and conquer
             if start<1 or end>n or start>=end:
                 return 1
             count = 0
@@ -38,9 +38,9 @@ class Solution:
                 mem[(start,end)] = count
             return count
         
-        return d_c(1,n)
+        return d_c(1,n) 
     # TC: O(n*h), n is number of nodes, h is depth of each tree, worst case n^2
     # SC: O(n), map m is declared in the scope
     # Runtime: 28 ms, faster than 76.04%
     # Memory Usage: 13.8 MB, less than 50.56%  
-    
+
