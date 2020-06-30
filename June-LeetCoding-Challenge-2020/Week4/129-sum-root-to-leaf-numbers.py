@@ -31,7 +31,7 @@ class Solution:
             total_path_sum += int(x)
         
         return total_path_sum
-    # TC: O(h), where h is the height of the tree, worst n
-    # SC: O(h), same
+    # TC: O(n), need to check all element
+    # SC: O(g), where g is the number of leaf node. g = ceil(n/2)
     # Runtime: 28 ms, faster than 87.12%
     # Memory Usage: 14 MB, less than 38.06% 

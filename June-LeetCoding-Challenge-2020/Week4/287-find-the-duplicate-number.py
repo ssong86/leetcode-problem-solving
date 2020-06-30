@@ -19,7 +19,7 @@ class Solution:
             
         return comp3
         # TC: O(N)
-        # SC: O(N)
+        # SC: O(1)
 
     # Sol 2. Two Pointers 2
     def findDuplicate(self, nums):
