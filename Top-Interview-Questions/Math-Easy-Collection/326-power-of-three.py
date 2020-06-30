@@ -18,3 +18,11 @@ class Solution:
         return (math.log(n)/math.log(3)) % 1 <= 2 * sys.float_info.epsilon    
     # TC: O(1) in our case because we only use integers for this problem.
     # SC: O(1)
+
+    # Sol 3. Max Int
+    def isPowerOfThree(self, n: int) -> bool:
+        if n < 1:
+            return False
+        return n > 0 and (1162261467 % n == 0) # 3^(logMaxInt) = 3^19 = 1162261467
+    # TC: O(1)
+    # SC: O(1)
