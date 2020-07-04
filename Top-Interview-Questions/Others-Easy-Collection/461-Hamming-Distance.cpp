@@ -23,3 +23,24 @@ public:
                 
     }
 };
+
+// Solution #2 XOR Bit Operation Optimization
+// TC: O(1) 
+// SC: O(1)
+// Runtime: 0 ms, faster than 100.00%
+// Memory Usage: 5.9 MB, less than 58.95%
+class Solution {
+public:
+    int hammingDistance(int x, int y) {
+        int count = 0;
+        
+        int xorz = x ^ y;
+        
+        while(xorz != 0){
+            count++;
+            xorz &= xorz-1;
+        }
+        return count;
+                
+    }
+};
