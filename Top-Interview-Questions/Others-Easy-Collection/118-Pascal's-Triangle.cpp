@@ -1,4 +1,4 @@
-// TC: O(n)
+// TC: O(n^2)
 // SC: O(1)
 // Runtime: 0 ms, faster than 100.00% 
 // Memory Usage: 6.6 MB, less than 35.20%

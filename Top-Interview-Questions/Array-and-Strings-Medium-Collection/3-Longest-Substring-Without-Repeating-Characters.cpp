@@ -1,5 +1,5 @@
 // Solution #1 Brute Force
-// TC: O(n) length of string
+// TC: O(n^2) length of string
 // SC: O(1) preallocating only 256 spaces
 // Runtime: 164 ms, faster than 10.91%
 // Memory Usage: 11.7 MB, less than 18.72%
