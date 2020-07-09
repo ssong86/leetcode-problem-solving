@@ -28,7 +28,7 @@ class Solution:
                     r -= 1
         return ret
         # Time Complexity: O(nlogn + n*n) = O(n^2)
-        # Space Complexity: O(n), ret
+        # Space Complexity: O(n), ret, except result O(logn)
         # Runtime Run Code: 48ms
         # Submit Runtime: 1092ms, 45.35% faster
         # Submit Space: 17.2mb, 22.86% faster

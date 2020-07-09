@@ -38,4 +38,3 @@ class Solution:
     # SC: O(1)
     # Runtime: 36 ms, faster than 75.73%
     # Memory Usage: 13.6 MB, less than 98.64%
-            

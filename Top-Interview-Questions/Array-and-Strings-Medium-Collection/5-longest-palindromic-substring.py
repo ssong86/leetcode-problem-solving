@@ -16,4 +16,6 @@ class Solution:
                    
         return res
     # TC: O(n*n)
-    # SC: O(1)
+    # SC: O(n*n)
+    # short circuit
+    # && or || operator -> check the second condition only if the first condition is true
