@@ -26,5 +26,5 @@ class Solution:
                     
             q = next_level
         return width
-        # TC: O(n + sigma(n-1)) -> O(n^2)
+        # TC: O(n^2) 
         # SC: O(n), if we exclude queue O(1)
