@@ -11,7 +11,9 @@ class Solution:
         q = deque([(root,0)])
         width = 0
         while q:
+            _,left = q[0]
             print("l", left)
+            _,right = q[-1]
             print("r",right)
             width = max(width,right-left+1)
             next_level = deque()
