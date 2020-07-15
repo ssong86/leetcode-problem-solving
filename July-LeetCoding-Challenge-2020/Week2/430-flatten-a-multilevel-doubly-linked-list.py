@@ -30,5 +30,4 @@ class Solution:
         trace.next.prev = None # head pointing trace
         return trace.next
         # TC: O(n), need to check every element
-        # SC: O(n), worst case = all child, if we exclude stack, O(1)
-        
+        # SC: O(n)

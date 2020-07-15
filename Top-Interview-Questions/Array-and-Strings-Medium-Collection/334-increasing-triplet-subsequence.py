@@ -1,6 +1,8 @@
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
-        flag = False
+        if not nums or len(nums) < 3:
+            return False
+        
         second = float('inf')
         third = float('inf')
         for first in nums:
@@ -9,10 +11,9 @@ class Solution:
             elif first <= third:
                 third = first
             else:
-                flag = True
-                return flag
+                return True
             
-        return flag
+        return False
         # TC: O(n)
         # SC: O(1)
         # Runtime: 80 ms, faster than 26.59% 

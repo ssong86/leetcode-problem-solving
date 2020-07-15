@@ -26,5 +26,5 @@ class Solution:
                     
             q = next_level
         return width
-        # TC: O(n^2) 
-        # SC: O(n), if we exclude queue O(1)
+        # TC: O(n), we visit every node 
+        # SC: O(n)
