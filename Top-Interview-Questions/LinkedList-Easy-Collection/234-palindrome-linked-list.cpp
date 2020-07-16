@@ -8,6 +8,11 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Runtime: 36 ms, faster than 18.16%
+// Memory Usage: 14.8 MB, less than 20.76%
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
