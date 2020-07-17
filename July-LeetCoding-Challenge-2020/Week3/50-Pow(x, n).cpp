@@ -1,8 +1,7 @@
 // Solution #1 Brute Force
 // TC: O(n)
 // SC: O(1)
-// Runtime: 0 ms, faster than 100.00%
-// Memory Usage: 5.9 MB, less than 74.90%
+// TIME LIMIT EXCEEDED
 class Solution {
     double res;
     bool isNeg;
