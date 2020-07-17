@@ -1,4 +1,4 @@
-/**
+```/**
  * @param {number[]} nums
  * @return {number[][]}
  * Runtime: 148 ms, faster than 67.71% of JavaScript online submissions for 3Sum.
@@ -48,4 +48,4 @@ function threeSumHelper (start, end, array, pivot, result) {
             end--;
         }
     }
-}
+}```
