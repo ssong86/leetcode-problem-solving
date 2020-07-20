@@ -25,5 +25,5 @@ class Solution:
                 result = substring + ' ' + result
             i = j+1
         return result
-    # TC: O(n)
+    # TC: O(n^2)
     # SC: O(n)

@@ -2,7 +2,7 @@ class Solution:
     # Sol 1. Chaeat
     def myPow(self, x: float, n: int) -> float:
         return x**n
-    # TC: O(1)
+    # TC: O(n^2)
     # SC: O(1)
 
     # Sol2. Bit Manipulation
